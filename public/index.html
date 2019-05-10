@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drawing Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <canvas class="whiteboard" ></canvas>
+
+ 
+
+  <div class="colors">
+    <h1 align="center"><span class="rainbow"> Sam's Drawing Board </span></h1>
+    <span class="rainbow">Choose from this amazing Colors </br></span>
+    <div class="color black"></div>
+    <div class="color red"></div>
+    <div class="color green"></div>
+    <div class="color blue"></div>
+    <div class="color yellow"></div>
+    <div><button id="clearButton" type="button">Clear Screen</button>
+    <button id="eraser" type="button">Eraser</button>
+    </br><b>Brush Size</b> :
+    <form id="Stroke">
+    <select id="lineSize">
+      <option value="2">Small</option>
+      <option value="3.5">Medium</option>
+      <option value="5">Large</option>
+    </select> 
+    </form>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
